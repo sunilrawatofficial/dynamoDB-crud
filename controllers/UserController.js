@@ -5,7 +5,6 @@ class User {
 
    async create(userObject) {
       try {
-
          userObject.id = Date.now().toString(36);
          const user = new userModel()
          return await user.create(userObject)

@@ -3,8 +3,8 @@ const AWS = require('aws-sdk')
 
 AWS.config.update({
    region: "us-east-1", // replace with your region in AWS account
-   accessKeyId: process.env.SUNIL_S3_ACCESS_KEY_ID,
-   secretAccessKey: process.env.SUNIL_S3_SECRET_ACCESS_KEY
+   accessKeyId: process.env.AWS_DEVELOPER_GROUP_ACCESS_KEY_ID,
+   secretAccessKey: process.env.AWS_DEVELOPER_GROUP_SECRET_ACCESS_KEY
 })
 
 exports.connect = async () => {
